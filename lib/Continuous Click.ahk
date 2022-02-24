@@ -12,7 +12,7 @@ Break
 }
 Else
 Send {LButton}
-Sleep,10
+Sleep, 50
 }
 Return
 

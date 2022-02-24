@@ -9,6 +9,7 @@ Menu, Tray, Icon, %I_Icon%
 ~NumpadMult::Reload
 ~NumpadDiv::ExitApp
 
+#Include %A_ScriptDir%\lib\
 #Include %A_ScriptDir%\lib\ToyXiaoyuyu\
 
 #Include Acceleration.ahk
