@@ -1,4 +1,4 @@
-I_Icon = C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\Resources\Exalted.jpg
+I_Icon = C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\Exalted.jpg
 IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
 ;return
@@ -9,7 +9,7 @@ Menu, Tray, Icon, %I_Icon%
 ~NumpadMult::Reload
 ~NumpadDiv::ExitApp
 
-#Include %A_ScriptDir%\AHK lib\ToyXiaoyuyu\
+#Include %A_ScriptDir%\lib\ToyXiaoyuyu\
 
 #Include Acceleration.ahk
 #Include Outbreak.ahk
