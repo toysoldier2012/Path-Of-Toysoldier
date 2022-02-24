@@ -8,7 +8,7 @@ Sleep, 6500
 Send 0
 Sleep, 6500
 
-SoundPlay, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\pop1.wav
+SoundPlay, C:\......
 
 Return
 
