@@ -15,6 +15,8 @@ Menu, Tray, Icon, %I_Icon%
 #Include Outbreak.ahk
 #Include Protection.ahk
 
+#Include %A_ScriptDir%\lib\
+
 #Include Back to town.ahk
 #Include Continuous Click.ahk
 #Include DecoReco.ahk
