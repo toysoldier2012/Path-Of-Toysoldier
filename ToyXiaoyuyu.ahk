@@ -1,9 +1,9 @@
+#IfWinActive Path of Exile
+
 I_Icon = C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\Exalted.jpg
 IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
 ;return
-
-#IfWinActive Path of Exile
 
 ~XButton1::Suspend
 ~NumpadMult::Reload

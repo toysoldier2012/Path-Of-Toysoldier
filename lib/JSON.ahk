@@ -1,12 +1,12 @@
-;~ http://www.autohotkey.com/board/topic/93300-what-format-to-store-settings-in/#entry588268
-json := {"version":"1","window":{"state":3,"screenX":25,"screenY":25,"width":790,"height":605,"test":{"nested":"object"}},"sidebar":{"visible":false,"width":"200"}}
-; Copyright © 2013 VxE. All rights reserved.
-; Serialize an object as JSON-like text OR format a string for inclusion therein.
-; NOTE: scientific notation is treated as a string and hexadecimal as a number.
-; NOTE: UTF-8 sequences are encoded as-is, NOT as their intended codepoint.
-str := objToJson(json)
-object := jsonToObj(str)
-MsgBox,% object.version
+; ;~ http://www.autohotkey.com/board/topic/93300-what-format-to-store-settings-in/#entry588268
+; json := {"version":"1","window":{"state":3,"screenX":25,"screenY":25,"width":790,"height":605,"test":{"nested":"object"}},"sidebar":{"visible":false,"width":"200"}}
+; ; Copyright © 2013 VxE. All rights reserved.
+; ; Serialize an object as JSON-like text OR format a string for inclusion therein.
+; ; NOTE: scientific notation is treated as a string and hexadecimal as a number.
+; ; NOTE: UTF-8 sequences are encoded as-is, NOT as their intended codepoint.
+; str := objToJson(json)
+; object := jsonToObj(str)
+; MsgBox,% object.version
 
 objToJson( obj ) {
 	If IsObject( obj )
