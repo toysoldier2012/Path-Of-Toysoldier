@@ -12,7 +12,6 @@ Menu, Tray, Icon, %I_Icon%
 #Include %A_ScriptDir%\lib\ToyXiaoyuyu\
 
 #Include Acceleration.ahk
-#Include Outbreak.ahk
 #Include Protection.ahk
 
 #Include %A_ScriptDir%\lib\
