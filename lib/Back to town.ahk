@@ -3,7 +3,7 @@
 Numpad9::
 
 send, i
-send, {Click 3750 1650 right}
+send, {Click 2910 1220 right}
 send, ]
 sleep, 500
 send, {Click 1920 810 left}

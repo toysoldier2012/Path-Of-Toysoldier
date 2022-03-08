@@ -17,7 +17,8 @@ Menu, Tray, Icon, %I_Icon%
 #Include %A_ScriptDir%\lib\
 
 #Include Back to town.ahk
-#Include Continuous Click.ahk
+#Include Continuous Ctrl Left Click.ahk
+#Include Continuous Shift Left Click.ahk
 #Include DecoReco.ahk
 
 
