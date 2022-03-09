@@ -7,7 +7,6 @@ Menu, Tray, Icon, %I_Icon%
 
 ~XButton1::Suspend
 ~NumpadMult::Reload
-~NumpadDiv::ExitApp
 
 #Include %A_ScriptDir%\lib\ToyXiaoyuyu\
 

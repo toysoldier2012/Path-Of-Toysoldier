@@ -3,8 +3,8 @@
 1::
 Send 1
 Send 0
-Send ^q
-Send ^w
+Send q
+Send w
 
 Return
 

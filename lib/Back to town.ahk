@@ -1,6 +1,6 @@
 #IfWinActive Path of Exile
 
-Numpad9::
+^Numpad9::
 
 send, i
 send, {Click 2910 1220 right}
