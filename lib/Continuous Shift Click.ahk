@@ -1,6 +1,6 @@
 #IfWinActive Path of Exile
 
-4::
+5::
 Send, {LShift Down}
 Loop
 {
