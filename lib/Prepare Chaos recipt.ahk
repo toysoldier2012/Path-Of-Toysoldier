@@ -2,40 +2,42 @@
 
 ^.::
 
-; 储存箱起始位置
-stashInitX = 35
-stashInitY = 265
-
-; 背包起始位置
-bagIniX = 2545
-bagIniY = 1175
-
-; 储存箱格子宽度
 bloc = 105
-stashQuadBloc = 52
-
-; 储存箱半格宽度
-halfBloc = 52
-stashHalfQuadBloc = 26
-
-; 储存箱标签页初始位置及高度
-stashOngletInitX = 1400
-stashOngletInitY = 236
+halfBloc := Floor(bloc/2)
+stashQuadBloc := Floor(bloc/2)
+stashHalfQuadBloc = := Floor(stashQuadBloc/2)
 stashOngletHeight = 47
+stashOngletHalfHeight := Floor(stashOngletHeight/2)
 
-MsgBox, 1, , Go?
+; 储存箱起始位置
 
+MsgBox, 1, Prepare Chaos recipt, Switch to an empty stash
 IfMsgBox, Cancel
 	return
 
-; 选取仓库页26
-cursorX := stashOngletInitX
-cursorY := stashOngletInitY + 26 * stashOngletHeight - stashOngletHeight
-Click, %cursorX% %cursorY%
+ImageSearch, stashInitX, stashInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\Stash.png
 
-; 选取填充通货，背包1-1
+; 背包起始位置
+ImageSearch, bagIniX, bagIniY, 0, 0, A_ScreenWidth, A_ScreenHeight, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\bag.png
+
+; 储存箱标签页初始位置及高度
+ImageSearch, stashOngletInitX, stashOngletInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *5 C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\StashOnglet.png
+
+MsgBox, 1, Prepare Chaos recipt, Take your currency
+IfMsgBox, Cancel
+	return
+    
+; 选取填充通货，放在背包1-1
 bagX := bagIniX + 1 * bloc - halfBloc
 bagY := bagIniY + 1 * bloc - halfBloc
+Click, %bagX% %bagY%
+
+; 选取仓库页26
+cursorX := stashOngletInitX + 20
+cursorY := stashOngletInitY + 0 * stashOngletHeight + stashOngletHalfHeight
+Click, %cursorX% %cursorY%
+
+; 拾取背包1-1通货
 Click, %bagX% %bagY%
 
 Send, {LShift Down}
@@ -114,11 +116,11 @@ Click, %bagX% %bagY%
 
 
 Loop, 2 {
-    onglet := 26 + A_Index
+    onglet := A_Index
         
     ; 选取仓库页27/28
     cursorX := stashOngletInitX
-    cursorY := stashOngletInitY + onglet * stashOngletHeight - stashOngletHeight
+    cursorY := stashOngletInitY + onglet * stashOngletHeight + stashOngletHalfHeight
     Click, %cursorX% %cursorY%
 
     ; 选取填充通货，背包1-1
