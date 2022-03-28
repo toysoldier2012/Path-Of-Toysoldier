@@ -16,7 +16,6 @@ Menu, Tray, Icon, %I_Icon%
 #Include Continuous Shift Click.ahk
 #Include Continuous Ctrl Click.ahk
 
-#Include Prepare Chaos recipt.ahk
 #Include Chaos recipt.ahk
 
 #Include Smoke mine.ahk
