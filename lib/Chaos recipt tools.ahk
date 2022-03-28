@@ -2,32 +2,32 @@
 
 initPosition() {
     ; 储存箱起始位置
-    MsgBox, 262145, Prepare Chaos recipt, Switch to an empty normal stash
+    MsgBox, 262144, Prepare Chaos recipt, Switch to an empty normal stash
 
-    ImageSearch, stashInitX, stashInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *10 C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\Stash.png
+    ImageSearch, stashInitX, stashInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *10 %A_ScriptDir%\resource\img\Stash.png
     If (ErrorLevel = 1)
         throw A_ThisFunc "() is stopped at " A_LineNumber " line, sorry"
 
-    IniWrite, %stashInitX%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashInitX
-    IniWrite, %stashInitY%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashInitY
+    IniWrite, %stashInitX%, %A_ScriptDir%\conf\data.ini, Position, stashInitX
+    IniWrite, %stashInitY%, %A_ScriptDir%\conf\data.ini, Position, stashInitY
 
     ; 背包起始位置
-    MsgBox, 262145, Prepare Chaos recipt, Clean your bag
+    MsgBox, 262144, Prepare Chaos recipt, Clean your bag
 
-    ImageSearch, bagInitX, bagInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *10 C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\Bag.png
+    ImageSearch, bagInitX, bagInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *10 %A_ScriptDir%\resource\img\Bag.png
     If (ErrorLevel = 1)
         throw A_ThisFunc "() is stopped at " A_LineNumber " line, sorry"
 
-    IniWrite, %bagInitX%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, bagInitX
-    IniWrite, %bagInitY%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, bagInitY
+    IniWrite, %bagInitX%, %A_ScriptDir%\conf\data.ini, Position, bagInitX
+    IniWrite, %bagInitY%, %A_ScriptDir%\conf\data.ini, Position, bagInitY
 
     ; 储存箱标签页初始位置
-    ImageSearch, stashOngletInitX, stashOngletInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *20 C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\StashOnglet.png
+    ImageSearch, stashOngletInitX, stashOngletInitY, 0, 0, A_ScreenWidth, A_ScreenHeight, *20 %A_ScriptDir%\resource\img\StashOnglet.png
     If (ErrorLevel = 1)
         throw A_ThisFunc "() is stopped at " A_LineNumber " line, sorry"
 
-    IniWrite, %stashOngletInitX%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashOngletInitX
-    IniWrite, %stashOngletInitY%, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashOngletInitY
+    IniWrite, %stashOngletInitX%, %A_ScriptDir%\conf\data.ini, Position, stashOngletInitX
+    IniWrite, %stashOngletInitY%, %A_ScriptDir%\conf\data.ini, Position, stashOngletInitY
 }
 
 PrepareChaosReciptStash() {

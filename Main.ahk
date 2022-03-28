@@ -1,6 +1,6 @@
 #IfWinActive Path of Exile
 
-I_Icon = C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\resource\img\Exalted_Orb_inventory_icon.png
+I_Icon = %A_ScriptDir%\resource\img\Exalted_Orb_inventory_icon.png
 IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
 ;return

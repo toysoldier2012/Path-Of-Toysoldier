@@ -21,12 +21,12 @@ Try {
 
 	global isInitPosition = 0
 
-	IniRead, stashInitX, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashInitX, %stashInitX%
-	IniRead, stashInitY, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashInitY, %stashInitY%
-	IniRead, bagInitX, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, bagInitX, %bagInitX%
-	IniRead, bagInitY, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, bagInitY, %bagInitY%
-	IniRead, stashOngletInitX, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashOngletInitX, %stashOngletInitX%
-	IniRead, stashOngletInitY, C:\Users\toysoldier\Documents\My Games\Path of Exile\Plugin\PathOfToysoldier\conf\data.ini, Position, stashOngletInitY, %stashOngletInitY%
+	IniRead, stashInitX, %A_ScriptDir%\conf\data.ini, Position, stashInitX, %stashInitX%
+	IniRead, stashInitY, %A_ScriptDir%\conf\data.ini, Position, stashInitY, %stashInitY%
+	IniRead, bagInitX, %A_ScriptDir%\conf\data.ini, Position, bagInitX, %bagInitX%
+	IniRead, bagInitY, %A_ScriptDir%\conf\data.ini, Position, bagInitY, %bagInitY%
+	IniRead, stashOngletInitX, %A_ScriptDir%\conf\data.ini, Position, stashOngletInitX, %stashOngletInitX%
+	IniRead, stashOngletInitY, %A_ScriptDir%\conf\data.ini, Position, stashOngletInitY, %stashOngletInitY%
 
 	; 询问初始化坐标数据
 	MsgBox, 262145, , Do you want to initialiser the position?
