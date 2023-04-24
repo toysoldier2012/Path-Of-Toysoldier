@@ -12,14 +12,16 @@ Menu, Tray, Icon, %I_Icon%
 #Include Acceleration.ahk
 #Include Mana.ahk
 
-
 #Include %A_ScriptDir%\lib\
 
 #Include Back to town.ahk
+#Include DecoReco.ahk
+
 #Include Continuous Ctrl Click.ahk
 #Include Continuous Shift Click.ahk
-#Include DecoReco.ahk
-#Include Smoke mine.ahk
+
+#Include Travel skill.ahk
+; #Include Smoke mine.ahk
 
 
 #IfWinActive
