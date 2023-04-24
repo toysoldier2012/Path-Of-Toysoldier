@@ -12,10 +12,11 @@ Menu, Tray, Icon, %I_Icon%
 
 #Include Back to town.ahk
 #Include DecoReco.ahk
-#Include Travel skill.ahk
 
 #Include Continuous Ctrl Click.ahk
 #Include Continuous Shift Click.ahk
+
+#Include Travel skill.ahk
 ; #Include Potions.ahk
 
 #IfWinActive
