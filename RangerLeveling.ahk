@@ -21,7 +21,6 @@ Menu, Tray, Icon, %I_Icon%
 #Include Continuous Shift Click.ahk
 
 #Include Travel skill.ahk
-; #Include Smoke mine.ahk
 
 
 #IfWinActive
