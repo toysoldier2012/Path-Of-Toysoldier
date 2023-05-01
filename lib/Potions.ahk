@@ -2,8 +2,10 @@
 
 ~2:: 
 
-Send, 2
-Send, 3
-Send, 4
+Send, 7
+Send, 8
+Send, 9
+
+return
 
 #IfWinActive

@@ -13,4 +13,6 @@ Send, t
 ;     Send, d
 ; return
 
+return
+
 #IfWinActive
