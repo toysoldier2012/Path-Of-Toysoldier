@@ -10,7 +10,6 @@ Menu, Tray, Icon, %I_Icon%
 
 #Include %A_ScriptDir%\lib\RangerLeveling
 #Include Acceleration.ahk
-#Include Mana.ahk
 
 #Include %A_ScriptDir%\lib\
 
