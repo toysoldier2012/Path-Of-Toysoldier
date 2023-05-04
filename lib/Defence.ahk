@@ -2,9 +2,11 @@
 
 ~2:: 
 
-Send, 7
-Send, 8
-; Send, 9
+Send, 1
+Send, q
+Send, w
+Sleep, 10000
+Send, w
 
 return
 

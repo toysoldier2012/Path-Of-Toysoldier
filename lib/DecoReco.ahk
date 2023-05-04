@@ -1,6 +1,6 @@
 #IfWinActive Path of Exile
 
-^Numpad6::
+^Numpad3::
 
 send, {Escape}
 send, {Click 1920 945 left}

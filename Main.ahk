@@ -16,7 +16,8 @@ Menu, Tray, Icon, %I_Icon%
 #Include Continuous Ctrl Click.ahk
 #Include Continuous Shift Click.ahk
 
-#Include Travel skill.ahk
-#Include Potions.ahk
+; #Include Travel skill.ahk
+; #Include Potions.ahk
+#Include Defence.ahk
 
 #IfWinActive
