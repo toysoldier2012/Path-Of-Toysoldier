@@ -3,10 +3,13 @@
 ~2:: 
 
 Send, 1
+Send, 7
+Send, 8
 Send, q
 Send, w
+Send, e
 Sleep, 10000
-Send, w
+Send, e
 
 return
 

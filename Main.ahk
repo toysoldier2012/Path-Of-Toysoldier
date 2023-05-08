@@ -3,7 +3,6 @@
 I_Icon = %A_ScriptDir%\resource\img\Exalted_Orb_inventory_icon.png
 IfExist, %I_Icon%
 Menu, Tray, Icon, %I_Icon%
-;return
 
 ~XButton1::Suspend
 ~NumpadMult::Reload
