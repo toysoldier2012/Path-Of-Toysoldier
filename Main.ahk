@@ -9,14 +9,18 @@ Menu, Tray, Icon, %I_Icon%
 
 #Include %A_ScriptDir%\lib\
 
+; Standard
 #Include Back to town.ahk
 #Include DecoReco.ahk
-
 #Include Continuous Ctrl Click.ahk
 #Include Continuous Shift Click.ahk
 
+; Leveling skill
 ; #Include Travel skill.ahk
 ; #Include Potions.ahk
+
+; Endgame
 #Include Defence.ahk
+#Include Haggle.ahk
 
 #IfWinActive
