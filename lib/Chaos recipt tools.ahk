@@ -1,5 +1,3 @@
-#IfWinActive Path of Exile
-
 initPosition() {
     ; 储存箱起始位置
     MsgBox, 262144, Prepare Chaos recipt, Switch to an empty normal stash
@@ -324,5 +322,3 @@ startSellingChaosRecipt() {
     }
 
 }
-
-#IfWinActive

@@ -1,5 +1,3 @@
-#IfWinActive Path of Exile
-
 ~XButton2:: 
     x1 := 1260
     y1 := 1525
@@ -28,7 +26,6 @@
     Click,%x2%,%y2%
     Click,%x2%,%y2%
     Click,%x2%,%y2%
-    MouseMove xpos, ypos	
-Return
+    MouseMove xpos, ypos
 
-#IfWinActive
+Return
