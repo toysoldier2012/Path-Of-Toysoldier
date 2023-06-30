@@ -1,6 +1,8 @@
 ; TODO 自动检测格子位置
 ^/::
 
+	#Include %A_ScriptDir%\tools\Chaos recipt tools.ahk
+
 	Try {
 		; 初始化数据
 		global bloc = 105
@@ -52,4 +54,4 @@
 		MsgBox, An exception was thrown!`nSpecifically: %e%
 	}
 
-Return
+	Return

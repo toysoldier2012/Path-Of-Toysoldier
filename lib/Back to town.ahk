@@ -6,4 +6,4 @@
     sleep, 500
     send, {Click 1920 810 left}
 
-return
+    Return

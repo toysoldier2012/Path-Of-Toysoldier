@@ -5,4 +5,4 @@
     sleep, 2000
     send, {Enter}
 
-return
+    Return
