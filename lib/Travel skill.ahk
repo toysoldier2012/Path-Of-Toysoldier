@@ -1,14 +1,17 @@
 ~r:: 
 
     Send, r
-    Sleep, 200
+    SetTimer, UseSecondTravelSkill, -500
+    ; settimer, SmokeMine, -300 
+
+    Return
+
+UseSecondTravelSkill:
+
     Send, t
 
-    ; settimer, SmokeMine, -300 
-    ; return 
+    Return
 
-    ; SmokeMine: 
-    ;     Send, d
-    ; return
-
-return
+; SmokeMine: 
+;     Send, d
+;     Return

@@ -16,15 +16,15 @@ Menu, Tray, Icon, %I_Icon%
 #Include Continuous Shift Click.ahk
 
 ; NPC's action
+; #Include Chaos recipt.ahk
 #Include Haggle.ahk
 
-; Leveling skill
+; Leveling
 ; #Include Mine.ahk
-#Include Travel skill.ahk
-#Include Potions.ahk
+; #Include Travel skill.ahk
+; #Include Potions.ahk
 
 ; Endgame
-; #Include Chaos recipt.ahk
 ; #Include Defence.ahk
 #Include Change Potions.ahk
 
