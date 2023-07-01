@@ -1,4 +1,4 @@
-~XButton2:: 
+^Numpad1::
 
     tujenHagglePriceInputX := 1260
     tujenHagglePriceInputY := 1525
